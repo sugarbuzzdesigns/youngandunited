@@ -1,0 +1,148 @@
+header {
+	border-top: solid 5px #e93f3f;
+	width: 100%;
+	z-index: 100;
+	background: rgba(255,255,255, 0.9);
+	position: fixed;
+}
+
+#section_home {
+	text-align: center;
+	padding-top: 200px;
+}
+
+#section_home img {
+ margin: 0 auto;
+}
+
+p {
+	color: #111111;
+	line-height: 20px;
+}
+
+p a {
+	color: #e93f3f;
+	border-bottom: solid 1px #e93f3f;
+	padding-bottom: 4px;	
+	text-decoration: none;
+}
+
+.work {
+	width: 634px;
+	margin: 0 auto;
+}
+
+.work-item {
+	width: 640px;
+}
+
+.button {
+	width: 252px;
+	height: 29px;
+	padding: 10px 0 0 0;
+	background-color: #97cbf5;
+	font: 14px Courier;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+
+.button + h4 + .button {
+	background-color: #e93f3f;
+}
+
+
+/* WORKS SECTION */
+#section_works {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#works {
+	overflow: hidden;
+}
+
+#section_works .content {
+	margin-bottom: 50px;
+}
+
+#section_works .content img {
+	margin: 15px auto 0;
+}
+
+/* SHARE FUNCTIONALITY */
+#section_works .work-cta {
+	width: 335px;
+	float: left;
+	position: relative;
+}
+
+#section_works .info {
+	height: 43px;
+	padding-top: 38px;
+}
+
+#section_works .info > span {
+	display: none;
+}
+
+#section_works .work:hover .info > span {display: block;}
+
+#section_works .share {
+	background: url(../_img/share-red.gif) no-repeat;
+	width: 98px;
+	height: 43px;
+	display: inline-block;
+	vertical-align: middle;
+	text-indent: -9999px;
+	position: relative;
+	z-index: 1;
+}
+
+#section_works .share + a {
+	color: #292929;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+#section_works .share + a span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 15px;
+	padding-right: 20px;
+	border-bottom: solid 1px #d7d6d6;
+	height: 26px;
+	padding-top: 16px;
+}
+
+#section_works .share + a abbr {
+	background-color: #292929;
+	background-position: center center;
+	vertical-align: middle;
+	width: 62px;
+	height: 43px;
+	float: none;
+}
+
+#section_works .creator {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#section_works .creator span {
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom: solid 1px #d7d6d6;
+}
+
+#section_works .creator em {
+	display: block;
+	font: 12px Courier;
+}
+
+#section_works .work {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 39px;
+}

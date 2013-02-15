@@ -1,4 +1,4 @@
-youngandunited
-==============
+young-united
+============
 
-Repo for all Y&amp;U site materials
+Young&amp;United

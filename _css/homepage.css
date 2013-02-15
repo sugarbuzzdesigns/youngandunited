@@ -1,0 +1,282 @@
+header {
+	border-top: solid 5px #e93f3f;
+	width: 100%;
+	z-index: 100;
+	background: rgba(255,255,255, 0.9);
+	position: fixed;
+}
+
+iframe {
+	display: block;
+}
+
+/* INLINE BLOCK ELEMENTS */
+#section_home .cta img, 
+#section_home .cta hr {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Video Hero Section */
+#video {
+	position: relative;
+}
+
+#video #poster {
+	width: 100%;
+	min-width: 1280px;
+}
+
+#playBtn {
+	position: absolute;
+	top: 47%;
+	left: 48%;
+	cursor: pointer;
+}
+
+#subVid {
+	background: url(../_img/homepage/sub-vid-hr.jpg) repeat-x;
+	margin: 0;
+	padding: 0;
+	height: 7px;
+	border: none;
+}
+
+#video_container {
+	min-width: 1280px;
+}
+
+/* SECTION_HOME */
+#section_home .content {
+	padding-top: 20px;
+}
+
+#section_home aside {
+	width: 1091px;
+	margin: 0 auto 60px; 
+	padding-left: 189px;
+}
+
+#section_home .cta {
+	width: 339px;
+	text-align: center;
+	float: left;
+	margin-right: 54px;
+	padding-top: 10px;
+}
+
+#section_home .cta .button {
+	margin-bottom: 10px;
+}
+
+#section_home .cta .button:hover {
+	background: #fe5244;
+}
+
+#section_home .cta span {
+	font: 14px Courier;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 5px;
+}
+
+#section_home .cta hr {
+	width: 97px;
+	color: #252525;
+}
+
+#section_home .cta img {
+	margin: 0 10px 0 9px;
+}
+
+#section_home p {
+	color: #252525;
+	width: 595px;
+	float: left;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+
+#section_home em {
+	color: #ff4d3d;
+}
+
+#flag {width: 100%; text-align: center; margin-top: 25px; margin-bottom: 50px;}
+
+#flag img {display: inline-block; vertical-align: middle;}
+
+#flag hr {
+	background: url(../_img/homepage/grunge-line.png) repeat-x;
+	height: 1px;
+	display: inline-block;
+	border: none;
+	width: 527px;
+	vertical-align: middle;
+	margin-right: 39px;
+}
+
+#flag hr + img + hr {
+	margin: 0 0 0 26px;
+}
+
+
+/* SECTION HOME FOOTER */
+#section_home .section_footer {
+	height: 115px;
+	padding-top: 35px;
+	background: #1a1a1a url(../_img/homepage/socialBgTexture.png) repeat-x;
+	width: auto;
+}
+
+#section_home footer {
+	width: 1140px;
+	overflow: hidden;
+}
+
+#section_home footer > img {
+	float: left;
+	margin: 0;
+	margin-left: 150px
+}
+
+#socialMedia {
+	width: 523px;
+	height: 32px;
+	background: #0e0e0e;
+	border: solid 2px #000;
+	border-bottom: solid 2px #434343;
+	color: #fff;
+	font-size: 14px;
+	float: left;
+	margin-top: 18px;
+	margin-left: 104px;
+}
+
+#socialMedia .amp {
+	margin-left: 3px;
+}
+
+#socialMedia * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#socialMedia > span {
+	margin: 0 50px;
+}
+
+#socialMedia small {
+	margin-left: 15px;
+	font-size: 11px;
+}
+
+#socialMedia hr {
+	display: block;
+	margin: 0;
+	border: none;
+	border-bottom: solid 2px #000;
+}
+
+#socialMedia a {
+	background-image: url(../_img/homepage/social-sprite.gif);
+}
+
+#twitter {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-position: 0 0;
+}
+
+#twitter:hover {
+	background-position: 0 -30px;
+}
+
+#facebook {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-position: -30px 0;
+}
+
+#facebook:hover {
+	background-position: -30px -30px;
+}
+
+/* SLIDER SECTION */
+#sliders {
+	min-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 650px;
+}
+
+.nivo-slider {
+	min-height: 650px;
+}
+
+#section_slideshow .slider-wrapper {
+	top: 0;
+	min-height: 650px;
+}
+
+.nivo-directionNav a {
+	background: url(../_img/slider/controls.png) no-repeat;
+	text-indent: -99999px;
+	width: 67px;
+	height: 31px;
+	position: absolute;
+	top: 45%;
+}
+
+#slider-youth .nivo-directionNav a.nivo-nextNav, #slider-forefathers .nivo-directionNav a.nivo-nextNav {
+	background-position: -68px 0;
+	left: auto;
+	right: 0px;
+}
+
+div.nivo-controlNav {
+	display: none;
+}
+
+/* SHARE CTA */
+#share-cta {
+	width: 1140px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+#share-cta a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 115px;
+	height: 234px;
+	width: 216px;
+	background: url(../_img/homepage/share-cta-sprite.png) no-repeat;
+}
+
+a#foreFathers {
+	width: 336px;
+	background-position: -342px 0;
+}
+
+a#kickstarter {
+	margin: 0;
+	width: 343px;
+	background-position: -797px 0;
+}
+
+#lookbook:hover, #lookbook.current {
+	background-position: 0 -241px;
+}
+
+#foreFathers:hover, #foreFathers.current {
+	background-position: -342px -241px;
+}
+
+#kickstarter:hover {
+	background-position: -797px -241px;
+}

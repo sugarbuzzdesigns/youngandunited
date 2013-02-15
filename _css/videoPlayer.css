@@ -1,0 +1,162 @@
+video {display: block;}
+
+#video_container {
+	width: 100%;
+	position: relative;
+	min-width: 1280px;
+}
+
+#mainPlay {cursor: pointer;}
+
+#video_container video {
+	width: 100%;
+
+	position: static;
+		
+	-webkit-transition:all .3s ease-in; 
+	-moz-transition: all .3s ease-in;
+}
+
+#video_container video:hover {
+
+}
+
+#videoControls {
+	display: none;
+}
+
+.js #videoControls { 
+	display: block;
+	margin-top: -41px;
+	width: 100%;
+	text-align: left; 
+	position: relative; 
+	overflow: hidden; 
+	padding: 8px 0;  
+	opacity: 0;
+}
+
+#video_container button { 
+	position: relative; 
+	float: right; 
+	cursor: pointer; 
+	border: none; 
+	color: white; 
+	margin-left: 5px; 
+	background: none;
+	border: none;
+	font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+	height: 20px;
+	padding-top: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Gets rid of the outline around buttons in Firefox. */
+#video_container input[type="button"]::-moz-focus-inner, button::-moz-focus-inner, button::-webkit-focus-inner { padding:0;border:0 none; }
+
+/* The play, pause buttons. Have to style differently because of their inherant sizes. Sucks a bit. */
+#play { text-shadow: 0 1px 0 black; position: relative; top: -1px;}
+#pauseButton { position: relative; left: -3px; top: -3px; font-size: 13px;}
+
+#video_container button:hover {
+	color: #ee5649;
+	text-shadow: 0 1px 0 #232323;
+}
+
+/* When in full screen mode */
+#fullScreen { padding-right: 15px;}
+#video_container .fs-control { position: fixed; bottom: 0; left: 0; z-index: 2200; }
+
+/* PROGRESS BAR */
+#progress { 
+	cursor: pointer;
+}
+
+#progress #progress_box { 
+	display: none;
+
+	float: left; 
+	width: 96%;
+	height: 10px; 
+	
+	border: 1px solid #292929; 
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#e93f3f), color-stop(.7, #e93f3f), to(#dd3d3d));
+	background: -moz-linear-gradient(left, #e93f3f, #e93f3f 70%, #dd3d3d);
+	
+	-webkit-box-shadow: 0 1px 0 #292929, 0 -1px 0 #292929;
+	-moz-box-shadow: 0 1px 0 #292929, 0 -1px 0 #292929;
+	box-shadow: 0 1px 0 #292929, 0 -1px 0 #292929;
+	
+	margin: 2px 0 0 5px; 
+	padding: 2px;
+	
+	overflow:hidden; 
+	
+}
+
+#progress #play_progress { 
+	display: block; 
+	width: 0px; 
+	height: 10px; 
+	
+	background-color: #fff; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), color-stop(.5, white), to(#e3e3e3));
+	background: -moz-linear-gradient(top, #e3e3e3, white 50%, #e3e3e3);
+	
+	-webkit-border-radius:5px; -moz-border-radius: 5px; border-radius: 5px; 
+}
+
+
+#progress #play_time { 
+	float: left; 
+	margin: 7px 0 0 5px; 
+	font-size: 10px; 
+	font-weight: normal; 
+	font-family: Helvetica, Arial, sans-serif;  
+	line-height: 1;
+}
+
+
+#video_container .fullsizeVideo {
+	position: fixed; 
+	left: 0;
+	top: 0;
+}
+
+#mainPlay {
+	position: absolute;
+	left: 47%;
+	top: 47%;
+	z-index: 2;
+	display: none;
+}
+
+#percentLoadedWrap {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+#percentLoaded {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 120px;
+	color: #fff;
+	opacity: .7;
+}
+
+#percentLoaded sup {
+	font-size: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#poster {
+	position: absolute;
+	width: 100%;
+	display: none;
+	z-index: 1;
+}
